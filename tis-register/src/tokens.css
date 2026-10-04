@@ -1,0 +1,10 @@
+:root{--paper:#dce6ec;--ink:#14233b;--rule:#9bb6d3;--stamp:#d6342c;--hi:#f4d44e;--card:#eef3f6;--font:'Bricolage Grotesque',system-ui,sans-serif;--hand:'Caveat',cursive}
+[data-theme='dark']{--paper:#12251f;--ink:#eaf0e6;--rule:#2f4a40;--stamp:#ff6b5e;--hi:#f4d44e;--card:#18322a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--paper);color:var(--ink);transition:background .5s,color .5s;
+background-image:repeating-linear-gradient(transparent 0 35px,var(--rule) 35px 36px);line-height:1.5}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--stamp);outline-offset:3px}
+@media (hover:hover) and (pointer:fine){body.has-cursor,body.has-cursor *{cursor:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
